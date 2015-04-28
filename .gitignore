@@ -1,6 +1,6 @@
 # word temp file
 ~*
 *.tmp
-
+*.*#
 # editor buffer
 *.swp
