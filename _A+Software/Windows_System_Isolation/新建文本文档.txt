@@ -1,0 +1,34 @@
+C盘存放Windows系统文件
+D盘存放用户配置和用户文件，以及应用程序文件
+
+实验原理
+关键文件夹和文件
+C:\Windows
+C:\Users (Windows7)
+C:\Documents and Settings (Windows XP)
+C:\Program Files
+C:\Program Files(x86) (Only 64bit Windows)
+C:\Program Data (Windows 7)
+C:\pagefile.sys
+C:\hiberfil.sys
+
+方法及难度
+页面文间 ——直接修改系统属性页迁移
+休眠文件——使用"powercfg -h off"关掉
+临时文件夹——系统属性页修改系统和用户环境变量
+驱动文件——修改注册表项重定位
+程序文件——通过注册表项ProgramFilesDir重定位
+用户配置和用户文档——通过多项注册表修改重定位
+
+实验报告要求
+
+包含以下项目
+	实验目的
+	实验原理
+	实验步骤
+	实验结果 
+		预期结果系统能够正常使用，C盘大小比以前减小且不会随新安装程序显著增大
+		对比实际结果与预期是否一致，说明理由
+	实验总结
+		通过实验你学习到了哪些Windows系统相关的知识？
+报告以Word文档形式提交，考试前一周截至
