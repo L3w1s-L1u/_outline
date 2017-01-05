@@ -1,0 +1,406 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>导出教学班成绩表(教学班)</title>
+
+       <script src="15%E7%89%A9%E7%BD%91_Linux_files/WdatePicker.js" type="text/javascript"></script><link href="15%E7%89%A9%E7%BD%91_Linux_files/WdatePicker.css" rel="stylesheet" type="text/css">
+       <script src="15%E7%89%A9%E7%BD%91_Linux_files/ymPrompt.js" type="text/javascript"></script>
+       <link href="15%E7%89%A9%E7%BD%91_Linux_files/ymPrompt.css" rel="stylesheet" type="text/css">   
+       <link href="15%E7%89%A9%E7%BD%91_Linux_files/new_style_b.css" rel="stylesheet" type="text/css">
+		  
+		      
+<script type="text/javascript">
+     
+    var c;
+    var PageWidth;
+    var PageWidth1;
+    var Pagehight;
+     var Pagehight2;
+    PageWidth=screen.width;
+    Pagehight=screen.height;
+    PageWidth=PageWidth*0.7;
+    PageWidth1=PageWidth*0.9;
+    Pagehight=Pagehight*0.6;
+    Pagehight2=Pagehight*0.8;
+	function pp(Page,k,txt)
+	
+	{
+	    c=k;
+	    ymPrompt.win({message:Page,width:PageWidth,height:Pagehight,title:txt,handler:handlerIframeA,iframe:true})
+	    //ymPrompt.win({message:Page,width:'50%',height:'50%',title:txt,handler:handlerIframeA,iframe:true})
+	}
+    function handlerIframeA(){        
+        document.getElementById(c).value =ymPrompt.getPage().contentWindow.document.getElementById("cVar").value ;
+        ymPrompt.close();
+        //location.href="PIM_Index.aspx#A2";
+        c="";
+        //document.getElementById("nCmd").click();
+		}	
+    function Page_NO(Page,txt)
+	{	    
+	    ymPrompt.win({message:Page,width:PageWidth,height:Pagehight,title:txt,handler:handlerIframeB,iframe:true})
+	}
+	
+	 function Page_NO_A(Page,txt)
+	{	    
+	    ymPrompt.win({message:Page,width:PageWidth1,height:Pagehight,title:txt,handler:handlerIframeB,iframe:true})
+	}
+	
+	 function Page_NO_B(Page,txt)
+	{	    
+	    ymPrompt.win({message:Page,width:PageWidth1,height:Pagehight2,title:txt,handler:handlerIframeB,iframe:true})
+	}
+	
+	function handlerIframeB(){
+        //document.getElementById("txt_部门名称").value =ymPrompt.getPage().contentWindow.document.getElementById("cVar").value ;
+        ymPrompt.close();
+        document.getElementById("nCmd").click();
+        //location.href="PIM_Index.aspx#A2";
+		}
+		
+    function Page_NO_2(Page,txt)
+	{	    
+	    ymPrompt.win({message:Page,width:PageWidth,height:Pagehight,title:txt,handler:handlerIframeC,iframe:true})
+	}
+	function handlerIframeC(){
+        //document.getElementById("txt_部门名称").value =ymPrompt.getPage().contentWindow.document.getElementById("cVar").value ;
+        ymPrompt.close();
+        document.getElementById("nCmd").click();
+        //location.href="PIM_Index.aspx#A2";
+    }
+
+    function WinClose() { window.parent.ymPrompt.doHandler('', true); }	
+		
+</script>
+	    <style type="text/css">
+            .style5
+            {
+                height: 31px;
+            }
+            .style33
+            {
+                height: 22px;
+                }
+            .style36
+            {
+                height: 14px;
+            }
+            .style37
+            {
+                height: 29px;
+            }
+            .style38
+            {
+                width: 10px;
+            }
+            .auto-style1 {
+                width: 107px;
+            }
+            .auto-style2 {
+                width: 138px;
+            }
+            .auto-style3 {
+                width: 456px;
+            }
+            .auto-style4 {
+                width: 171px;
+            }
+            .auto-style5 {
+                width: 401px;
+            }
+            .auto-style6 {
+                width: 118px;
+            }
+            .style39
+            {
+                width: 10px;
+            }
+            .style40
+            {
+                width: 302px;
+            }
+            </style>
+	</head>
+	<body><div style="position: absolute; z-index: 19700; top: -1970px; left: -1970px; display: none;"><iframe src="15%E7%89%A9%E7%BD%91_Linux_files/My97DatePicker.htm" border="0" scrolling="no" style="width: 186px; height: 199px;" frameborder="0"></iframe></div>
+	  <meta http-equiv="Pragma" content="no-cache">
+      <meta http-equiv="Cache-Control" content="no-cache">
+      <meta http-equiv="Expires" content="0">
+        <form name="Form1" method="post" action="grade_cj_dc_jxb.aspx" id="Form1">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="LinkB_导出Excel" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="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" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBwLPhfTtBAL76rKQDALc7P2JAgLn8ZWMAgLB+YuhDAK4no2JCAL7uID6CLX/zDx5r7Iy9gY6dBJ6XtJtCZSg" type="hidden">
+</div>
+        <div>
+            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                <tbody><tr align="center">
+                    <td>
+                        <a id="LinkB_导出Excel" href="javascript:__doPostBack('LinkB_%E5%AF%BC%E5%87%BAExcel','')"><font style="vertical-align: bottom" size="2" face="宋体">导出到Excel </font></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="But_学号" value="按学号排序" id="But_学号" style="height:22px;width:74px;" type="submit">
+                        &nbsp;&nbsp;<input name="But_姓名" value="按姓名排序" id="But_姓名" style="height:22px;width:74px;" type="submit">
+                        &nbsp;&nbsp;<input name="But_班级学号" value="按先班级再学号排序" id="But_班级学号" style="height:22px;width:135px;" type="submit">
+                        &nbsp;&nbsp;<input name="But_班级姓名" value="按先班级再姓名排序" id="But_班级姓名" style="height:22px;width:135px;" type="submit">
+                    </td>
+                </tr>
+            </tbody></table>
+            
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody><tr align="center">
+                            <td class="style5" colspan="4" align="center">
+                                <font style="vertical-align: middle" color="#293257" face="宋体">
+                                    <span id="Lab_提示" style="font-size:11pt;font-weight:bold;">高职2015物联网应用技术(3G/4G移动通信)1班《操作系统》成绩表</span>
+                                </font>
+                                </td>
+                        </tr>
+                        <tr bgcolor="#E7E9F1">
+                            <td class="style37" colspan="4" align="center">
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">
+                                    <span id="Lab_学年学期">2016-2017学年第一学期</span>
+                                </span></font>
+                            </td>
+                        </tr>
+                        <tr bgcolor="#E7E9F1">
+                            <td class="style37">
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">教学班级：<span id="Lab_班级名称">高职2015物联网应用技术(3G/4G移动通信)1班</span>
+                                </span></font>
+                            </td>
+                            <td class="style37">
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">开课部门：<span id="Lab_开课部门">信息科学系</span></span></font>
+                            </td>
+                            <td class="style37">
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">任课教师：<span id="Lab_教师姓名">刘海波</span></span></font>
+                            </td>
+                            <td class="style37">
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">学分：<span id="Lab_学分">4.00</span></span></font>
+                            </td>
+                        </tr>
+                        <tr bgcolor="#E7E9F1">
+                            <td>
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                课程名称：<span id="Lab_课程名称">操作系统</span>
+                                </span></font>
+                            </td>
+                            <td>
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">课程性质：<span id="Lab_课程性质">专业必修课</span>
+                                </span></font>
+                            </td>
+                            <td>
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">考核方式：<span id="Lab_考核方式">考试</span>
+                                </span></font>
+                            </td>
+                            <td>
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">填表日期：<span id="Lab_日期">2016/12/30</span>
+                                </span></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style36" colspan="4">
+                                <table rules="all" id="Dg_成绩表单" style="color:#333333;width:100%;border-collapse:collapse;" cellspacing="0" cellpadding="0" border="1" align="Center">
+	<tbody><tr style="color:#292532;background-color:White;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;" align="center">
+		<td>学号</td><td>姓名</td><td>行政班</td><td>平时成绩</td><td>实训(实验)成绩</td><td>期末成绩</td><td>总评成绩</td><td>成绩备注</td>
+	</tr><tr style="background-color:White;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321030009</td><td>付广强</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>0</td><td>0</td><td>77</td><td>39</td><td>&nbsp;</td>
+	</tr><tr style="background-color:#E7E9F1;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321030017</td><td>况润杰</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>缺考</td><td>缺考</td>
+	</tr><tr style="background-color:White;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321030020</td><td>李克志</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>34</td><td>0</td><td>76</td><td>48</td><td>&nbsp;</td>
+	</tr><tr style="background-color:#E7E9F1;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321030021</td><td>李梅</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>84</td><td>75</td><td>54</td><td>67</td><td>&nbsp;</td>
+	</tr><tr style="background-color:White;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321030025</td><td>刘阳</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>0</td><td>0</td><td>72</td><td>36</td><td>&nbsp;</td>
+	</tr><tr style="background-color:#E7E9F1;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321030029</td><td>邱淦东</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>0</td><td>0</td><td>80</td><td>40</td><td>&nbsp;</td>
+	</tr><tr style="background-color:White;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321030040</td><td>殷凤</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>100</td><td>100</td><td>80</td><td>90</td><td>&nbsp;</td>
+	</tr><tr style="background-color:#E7E9F1;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321030045</td><td>张家科</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>0</td><td>0</td><td>75</td><td>38</td><td>&nbsp;</td>
+	</tr><tr style="background-color:White;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321040007</td><td>胡玉莹</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>100</td><td>75</td><td>74</td><td>82</td><td>&nbsp;</td>
+	</tr><tr style="background-color:#E7E9F1;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321040014</td><td>莫燕兰</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>84</td><td>75</td><td>81</td><td>81</td><td>&nbsp;</td>
+	</tr><tr style="background-color:White;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321040017</td><td>锁子钧</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>0</td><td>0</td><td>78</td><td>39</td><td>&nbsp;</td>
+	</tr><tr style="background-color:#E7E9F1;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321040019</td><td>王光琴</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>100</td><td>75</td><td>85</td><td>88</td><td>&nbsp;</td>
+	</tr><tr style="background-color:White;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321040027</td><td>曾琪琪</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>84</td><td>75</td><td>82</td><td>81</td><td>&nbsp;</td>
+	</tr><tr style="background-color:#E7E9F1;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321040030</td><td>赵定会</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>100</td><td>100</td><td>68</td><td>84</td><td>&nbsp;</td>
+	</tr><tr style="background-color:White;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321040031</td><td>赵婷</td><td>高职2015物联网应用技术(3G/4G移动通信)1班</td><td>100</td><td>75</td><td>83</td><td>87</td><td>&nbsp;</td>
+	</tr>
+</tbody></table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                             <td class="style33" colspan="4">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td class="style33" colspan="4">
+                                <table width="100%" border="1">
+                                    <tbody><tr>
+                                        <td colspan="8" align="center"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                总评 = 平时 <span id="Lab_平时比例">30</span>%+实验(实训) <span id="Lab_实验比例">20</span>%+期末 <span id="Lab_期末比例">50</span>%
+                                </span></font>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="style38" rowspan="7">
+                                            &nbsp;</td>
+                                        <td class="style38" rowspan="7"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            总评成绩分析</span></font></td>
+                                        <td class="auto-style1"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            百分制</span></font></td>
+                                        <td class="auto-style6"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            人数</span></font></td>
+                                        <td class="style40"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            百分比</span></font></td>
+                                        <td class="style39" rowspan="7">
+                                            &nbsp;</td>
+                                        <td class="auto-style4"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            统计</span></font></td>
+                                        <td><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            人数</span></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style1"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            90分以上</span></font></td>
+                                        <td class="auto-style6" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_人_90">1</span>
+                                        </span></font></td>
+                                        <td class="style40" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_百_90">7.1</span>
+                                        </span></font></td>
+                                        <td class="auto-style4"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            应考</span></font></td>
+                                        <td align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_应考">15</span>
+                                        </span></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style1" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            80--89分</span></font></td>
+                                        <td class="auto-style6" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_人_89">6</span>
+                                        </span></font></td>
+                                        <td class="style40" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_百_89">42.9</span>
+                                        </span></font></td>
+                                        <td class="auto-style4"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            实考</span></font></td>
+                                        <td align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_实考">14</span>
+                                        </span></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style1" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            70--79分</span></font></td>
+                                        <td class="auto-style6" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_人_78">0</span>
+                                        </span></font></td>
+                                        <td class="style40" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_百_78">0</span>
+                                        </span></font></td>
+                                        <td class="auto-style4"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            缓考</span></font></td>
+                                        <td align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_缓考">0</span>
+                                        </span></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style1"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            60--69分</span></font></td>
+                                        <td class="auto-style6" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_人_67">1</span>
+                                        </span></font></td>
+                                        <td class="style40" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_百_67">7.1</span>
+                                        </span></font></td>
+                                        <td class="auto-style4"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        取消考试资格或扣考
+                                            </span></font></td>
+                                        <td align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_扣考">0</span>
+                                        </span></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style1"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            60分以下</span></font></td>
+                                        <td class="auto-style6" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_人_6">6</span>
+                                        </span></font></td>
+                                        <td class="style40" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_百_6">42.9</span>
+                                        </span></font></td>
+                                        <td class="auto-style4"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        缺考或旷考</span></font></td>
+                                        <td align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_缺考">1</span>
+                                        </span></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">平均分                                        
+                                        </span></font></td>
+                                        <td colspan="2" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_平均分">64.3</span></span></font></td>
+                                        <td><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">违纪
+                                        </span></font></td>
+                                        <td align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_违纪">0</span>
+                                        </span></font></td>
+                                    </tr> 
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style33" colspan="4">&nbsp;</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="style33" colspan="4">
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">&nbsp;教师：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>签字&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;教学团队负责人：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>签字
+                                </span></font>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                
+            
+            
+            <a id="nCmd" href="javascript:__doPostBack('nCmd','')" style="color:#B5BADA;font-size:Smaller;">刷新</a>
+        </div>
+        </form>
+    
+
+<div><div id="maskLevel" style="position:absolute;top:0;left:0;display:none;text-align:center;z-index:10000;"></div><div id="ym-window" style="position:absolute;z-index:10001;display:none"><div class="ym-tl" id="ym-tl"><div class="ym-tr"><div class="ym-tc" style="cursor:move;"><div class="ym-header-text"></div><div class="ym-header-tools"><div class="ymPrompt_min" title="最小化"><strong>0</strong></div><div class="ymPrompt_max" title="最大化"><strong>1</strong></div><div class="ymPrompt_close" title="关闭"><strong>r</strong></div></div></div></div></div><div class="ym-ml" id="ym-ml"><div class="ym-mr"><div class="ym-mc"><div class="ym-body" style="position:relative"></div></div></div></div><div class="ym-ml" id="ym-btnl"><div class="ym-mr"><div class="ym-btn"></div></div></div><div class="ym-bl" id="ym-bl"><div class="ym-br"><div class="ym-bc"></div></div></div></div></div></body></html>

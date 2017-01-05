@@ -1,0 +1,386 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<title>导出教学班成绩表(教学班)</title>
+
+       <script src="15%E4%B8%AD%E5%8A%A01%E7%8F%AD_A+Software_files/WdatePicker.js" type="text/javascript"></script><link href="15%E4%B8%AD%E5%8A%A01%E7%8F%AD_A+Software_files/WdatePicker.css" rel="stylesheet" type="text/css">
+       <script src="15%E4%B8%AD%E5%8A%A01%E7%8F%AD_A+Software_files/ymPrompt.js" type="text/javascript"></script>
+       <link href="15%E4%B8%AD%E5%8A%A01%E7%8F%AD_A+Software_files/ymPrompt.css" rel="stylesheet" type="text/css">   
+       <link href="15%E4%B8%AD%E5%8A%A01%E7%8F%AD_A+Software_files/new_style_b.css" rel="stylesheet" type="text/css">
+		  
+		      
+<script type="text/javascript">
+     
+    var c;
+    var PageWidth;
+    var PageWidth1;
+    var Pagehight;
+     var Pagehight2;
+    PageWidth=screen.width;
+    Pagehight=screen.height;
+    PageWidth=PageWidth*0.7;
+    PageWidth1=PageWidth*0.9;
+    Pagehight=Pagehight*0.6;
+    Pagehight2=Pagehight*0.8;
+	function pp(Page,k,txt)
+	
+	{
+	    c=k;
+	    ymPrompt.win({message:Page,width:PageWidth,height:Pagehight,title:txt,handler:handlerIframeA,iframe:true})
+	    //ymPrompt.win({message:Page,width:'50%',height:'50%',title:txt,handler:handlerIframeA,iframe:true})
+	}
+    function handlerIframeA(){        
+        document.getElementById(c).value =ymPrompt.getPage().contentWindow.document.getElementById("cVar").value ;
+        ymPrompt.close();
+        //location.href="PIM_Index.aspx#A2";
+        c="";
+        //document.getElementById("nCmd").click();
+		}	
+    function Page_NO(Page,txt)
+	{	    
+	    ymPrompt.win({message:Page,width:PageWidth,height:Pagehight,title:txt,handler:handlerIframeB,iframe:true})
+	}
+	
+	 function Page_NO_A(Page,txt)
+	{	    
+	    ymPrompt.win({message:Page,width:PageWidth1,height:Pagehight,title:txt,handler:handlerIframeB,iframe:true})
+	}
+	
+	 function Page_NO_B(Page,txt)
+	{	    
+	    ymPrompt.win({message:Page,width:PageWidth1,height:Pagehight2,title:txt,handler:handlerIframeB,iframe:true})
+	}
+	
+	function handlerIframeB(){
+        //document.getElementById("txt_部门名称").value =ymPrompt.getPage().contentWindow.document.getElementById("cVar").value ;
+        ymPrompt.close();
+        document.getElementById("nCmd").click();
+        //location.href="PIM_Index.aspx#A2";
+		}
+		
+    function Page_NO_2(Page,txt)
+	{	    
+	    ymPrompt.win({message:Page,width:PageWidth,height:Pagehight,title:txt,handler:handlerIframeC,iframe:true})
+	}
+	function handlerIframeC(){
+        //document.getElementById("txt_部门名称").value =ymPrompt.getPage().contentWindow.document.getElementById("cVar").value ;
+        ymPrompt.close();
+        document.getElementById("nCmd").click();
+        //location.href="PIM_Index.aspx#A2";
+    }
+
+    function WinClose() { window.parent.ymPrompt.doHandler('', true); }	
+		
+</script>
+	    <style type="text/css">
+            .style5
+            {
+                height: 31px;
+            }
+            .style33
+            {
+                height: 22px;
+                }
+            .style36
+            {
+                height: 14px;
+            }
+            .style37
+            {
+                height: 29px;
+            }
+            .style38
+            {
+                width: 10px;
+            }
+            .auto-style1 {
+                width: 107px;
+            }
+            .auto-style2 {
+                width: 138px;
+            }
+            .auto-style3 {
+                width: 456px;
+            }
+            .auto-style4 {
+                width: 171px;
+            }
+            .auto-style5 {
+                width: 401px;
+            }
+            .auto-style6 {
+                width: 118px;
+            }
+            .style39
+            {
+                width: 10px;
+            }
+            .style40
+            {
+                width: 302px;
+            }
+            </style>
+	</head>
+	<body><div style="position: absolute; z-index: 19700; top: -1970px; left: -1970px; display: none;"><iframe src="15%E4%B8%AD%E5%8A%A01%E7%8F%AD_A+Software_files/My97DatePicker.htm" border="0" scrolling="no" style="width: 186px; height: 199px;" frameborder="0"></iframe></div>
+	  <meta http-equiv="Pragma" content="no-cache">
+      <meta http-equiv="Cache-Control" content="no-cache">
+      <meta http-equiv="Expires" content="0">
+        <form name="Form1" method="post" action="grade_cj_dc_jxb.aspx" id="Form1">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="LinkB_导出Excel" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="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" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBwLdjNbaAgL76rKQDALc7P2JAgLn8ZWMAgLB+YuhDAK4no2JCAL7uID6CCwwJ1bVLFht7UAZmHdHRpKnjuga" type="hidden">
+</div>
+        <div>
+            <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                <tbody><tr align="center">
+                    <td>
+                        <a id="LinkB_导出Excel" href="javascript:__doPostBack('LinkB_%E5%AF%BC%E5%87%BAExcel','')"><font style="vertical-align: bottom" size="2" face="宋体">导出到Excel </font></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="But_学号" value="按学号排序" id="But_学号" style="height:22px;width:74px;" type="submit">
+                        &nbsp;&nbsp;<input name="But_姓名" value="按姓名排序" id="But_姓名" style="height:22px;width:74px;" type="submit">
+                        &nbsp;&nbsp;<input name="But_班级学号" value="按先班级再学号排序" id="But_班级学号" style="height:22px;width:135px;" type="submit">
+                        &nbsp;&nbsp;<input name="But_班级姓名" value="按先班级再姓名排序" id="But_班级姓名" style="height:22px;width:135px;" type="submit">
+                    </td>
+                </tr>
+            </tbody></table>
+            
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+                        <tbody><tr align="center">
+                            <td class="style5" colspan="4" align="center">
+                                <font style="vertical-align: middle" color="#293257" face="宋体">
+                                    <span id="Lab_提示" style="font-size:11pt;font-weight:bold;">高职2015计算机网络技术(中加合作办学项目)1班《A+Software:软件基础》成绩表</span>
+                                </font>
+                                </td>
+                        </tr>
+                        <tr bgcolor="#E7E9F1">
+                            <td class="style37" colspan="4" align="center">
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">
+                                    <span id="Lab_学年学期">2016-2017学年第一学期</span>
+                                </span></font>
+                            </td>
+                        </tr>
+                        <tr bgcolor="#E7E9F1">
+                            <td class="style37">
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">教学班级：<span id="Lab_班级名称">高职2015计算机网络技术(中加合作办学项目)1班</span>
+                                </span></font>
+                            </td>
+                            <td class="style37">
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">开课部门：<span id="Lab_开课部门">信息科学系</span></span></font>
+                            </td>
+                            <td class="style37">
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">任课教师：<span id="Lab_教师姓名">刘海波</span></span></font>
+                            </td>
+                            <td class="style37">
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">学分：<span id="Lab_学分">4.00</span></span></font>
+                            </td>
+                        </tr>
+                        <tr bgcolor="#E7E9F1">
+                            <td>
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                课程名称：<span id="Lab_课程名称">A+Software:软件基础</span>
+                                </span></font>
+                            </td>
+                            <td>
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">课程性质：<span id="Lab_课程性质">专业必修课</span>
+                                </span></font>
+                            </td>
+                            <td>
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">考核方式：<span id="Lab_考核方式">考查</span>
+                                </span></font>
+                            </td>
+                            <td>
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">填表日期：<span id="Lab_日期">2016/12/30</span>
+                                </span></font>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style36" colspan="4">
+                                <table rules="all" id="Dg_成绩表单" style="color:#333333;width:100%;border-collapse:collapse;" cellspacing="0" cellpadding="0" border="1" align="Center">
+	<tbody><tr style="color:#292532;background-color:White;font-size:10pt;font-weight:bold;font-style:normal;text-decoration:none;" align="center">
+		<td>学号</td><td>姓名</td><td>行政班</td><td>平时成绩</td><td>实训(实验)成绩</td><td>期末成绩</td><td>总评成绩</td><td>成绩备注</td>
+	</tr><tr style="background-color:White;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321010149</td><td>赵梓铭</td><td>高职2015计算机网络技术(中加合作办学项目)1班</td><td>84</td><td>0</td><td>89</td><td>61</td><td>&nbsp;</td>
+	</tr><tr style="background-color:#E7E9F1;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321020279</td><td>李璐瑶</td><td>高职2015计算机网络技术(中加合作办学项目)1班</td><td>100</td><td>50</td><td>90</td><td>81</td><td>&nbsp;</td>
+	</tr><tr style="background-color:White;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321020284</td><td>孙杰</td><td>高职2015计算机网络技术(中加合作办学项目)1班</td><td>67</td><td>100</td><td>92</td><td>87</td><td>&nbsp;</td>
+	</tr><tr style="background-color:#E7E9F1;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321020288</td><td>杨毓涛</td><td>高职2015计算机网络技术(中加合作办学项目)1班</td><td>67</td><td>100</td><td>89</td><td>86</td><td>&nbsp;</td>
+	</tr><tr style="background-color:White;font-size:10pt;font-weight:normal;font-style:normal;text-decoration:none;" valign="middle" align="center">
+		<td>151321020289</td><td>姚玉敏</td><td>高职2015计算机网络技术(中加合作办学项目)1班</td><td>100</td><td>50</td><td>87</td><td>80</td><td>&nbsp;</td>
+	</tr>
+</tbody></table>
+                            </td>
+                        </tr>
+
+                        <tr>
+                             <td class="style33" colspan="4">&nbsp;</td>
+                        </tr>
+
+                        <tr>
+                            <td class="style33" colspan="4">
+                                <table width="100%" border="1">
+                                    <tbody><tr>
+                                        <td colspan="8" align="center"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                总评 = 平时 <span id="Lab_平时比例">30</span>%+实验(实训) <span id="Lab_实验比例">30</span>%+期末 <span id="Lab_期末比例">40</span>%
+                                </span></font>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                       <td class="style38" rowspan="7">
+                                            &nbsp;</td>
+                                        <td class="style38" rowspan="7"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            总评成绩分析</span></font></td>
+                                        <td class="auto-style1"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            百分制</span></font></td>
+                                        <td class="auto-style6"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            人数</span></font></td>
+                                        <td class="style40"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            百分比</span></font></td>
+                                        <td class="style39" rowspan="7">
+                                            &nbsp;</td>
+                                        <td class="auto-style4"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            统计</span></font></td>
+                                        <td><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            人数</span></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style1"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            90分以上</span></font></td>
+                                        <td class="auto-style6" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_人_90">0</span>
+                                        </span></font></td>
+                                        <td class="style40" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_百_90">0</span>
+                                        </span></font></td>
+                                        <td class="auto-style4"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            应考</span></font></td>
+                                        <td align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_应考">5</span>
+                                        </span></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style1" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            80--89分</span></font></td>
+                                        <td class="auto-style6" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_人_89">4</span>
+                                        </span></font></td>
+                                        <td class="style40" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_百_89">80</span>
+                                        </span></font></td>
+                                        <td class="auto-style4"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            实考</span></font></td>
+                                        <td align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_实考">5</span>
+                                        </span></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style1" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            70--79分</span></font></td>
+                                        <td class="auto-style6" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_人_78">0</span>
+                                        </span></font></td>
+                                        <td class="style40" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_百_78">0</span>
+                                        </span></font></td>
+                                        <td class="auto-style4"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            缓考</span></font></td>
+                                        <td align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_缓考">0</span>
+                                        </span></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style1"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            60--69分</span></font></td>
+                                        <td class="auto-style6" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_人_67">1</span>
+                                        </span></font></td>
+                                        <td class="style40" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_百_67">20</span>
+                                        </span></font></td>
+                                        <td class="auto-style4"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        取消考试资格或扣考
+                                            </span></font></td>
+                                        <td align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_扣考">0</span>
+                                        </span></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="auto-style1"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                            60分以下</span></font></td>
+                                        <td class="auto-style6" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_人_6">0</span>
+                                        </span></font></td>
+                                        <td class="style40" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_百_6">0</span>
+                                        </span></font></td>
+                                        <td class="auto-style4"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        缺考或旷考</span></font></td>
+                                        <td align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_缺考">0</span>
+                                        </span></font></td>
+                                    </tr>
+                                    <tr>
+                                        <td><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">平均分                                        
+                                        </span></font></td>
+                                        <td colspan="2" align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_平均分">79</span></span></font></td>
+                                        <td><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">违纪
+                                        </span></font></td>
+                                        <td align="left"><font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt; color: #292532">
+                                        <span id="Lab_违纪">0</span>
+                                        </span></font></td>
+                                    </tr> 
+                                </tbody></table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="style33" colspan="4">&nbsp;</td>
+                        </tr>
+                        <tr align="center">
+                            <td class="style33" colspan="4">
+                                <font style="vertical-align: middle" color="#293257" face="宋体"><span style="font-size: 10pt;
+                                    color: #292532">&nbsp;教师：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>签字&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;教学团队负责人：<u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</u>签字
+                                </span></font>
+                            </td>
+                        </tr>
+                    </tbody></table>
+                
+            
+            
+            <a id="nCmd" href="javascript:__doPostBack('nCmd','')" style="color:#B5BADA;font-size:Smaller;">刷新</a>
+        </div>
+        </form>
+    
+
+<div><div id="maskLevel" style="position:absolute;top:0;left:0;display:none;text-align:center;z-index:10000;"></div><div id="ym-window" style="position:absolute;z-index:10001;display:none"><div class="ym-tl" id="ym-tl"><div class="ym-tr"><div class="ym-tc" style="cursor:move;"><div class="ym-header-text"></div><div class="ym-header-tools"><div class="ymPrompt_min" title="最小化"><strong>0</strong></div><div class="ymPrompt_max" title="最大化"><strong>1</strong></div><div class="ymPrompt_close" title="关闭"><strong>r</strong></div></div></div></div></div><div class="ym-ml" id="ym-ml"><div class="ym-mr"><div class="ym-mc"><div class="ym-body" style="position:relative"></div></div></div></div><div class="ym-ml" id="ym-btnl"><div class="ym-mr"><div class="ym-btn"></div></div></div><div class="ym-bl" id="ym-bl"><div class="ym-br"><div class="ym-bc"></div></div></div></div></div></body></html>
